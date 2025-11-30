@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #f6f6f6;
+  color: #202122;
+  line-height: 1.6;
+}
+
+/* Header */
+.main-header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #a7d7f9;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-header .logo {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.main-header a {
+  text-decoration: none;
+  color: #333;
+  margin-left: 15px;
+}
+
+/* Layout Container */
+.container {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Sidebar (Bagian Kiri) */
+.sidebar {
+  width: 250px;
+  flex-shrink: 0;
+  margin-right: 30px;
+  border-right: 1px solid #ccc;
+  padding-right: 20px;
+}
+
+.sidebar h3 {
+  font-size: 0.9em;
+  color: #54595d;
+  border-bottom: 1px solid #c8ccd1;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+
+.sidebar ul {
+  list-style: none;
+  font-size: 0.9em;
+}
+
+.sidebar li {
+  margin-bottom: 5px;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #0645ad;
+}
+.section p {
+  size: 100px;
+}
+.sidebar a:hover {
+  text-decoration: underline;
+}
+
+/* Konten Utama */
+.content {
+  flex-grow: 1;
+  background-color: white;
+  padding: 30px;
+  border: 1px solid #a7d7f9;
+}
+
+.content h1 {
+  font-size: 1.8em;
+  border-bottom: 1px solid #a2a9b1;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.content h2 {
+  font-size: 1.5em;
+  border-bottom: 1px solid #a2a9b1;
+  padding-bottom: 5px;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+.content-image {
+  display: block; /* Agar gambar dianggap sebagai blok sendiri */
+  max-width: 50%;
+  height: auto;
+  margin-bottom: 20px; /* Jarak ke teks di bawahnya */
+  border: 1px solid #ccc;
+  padding: 5px;
+  background: #f8f9fa;
+}

@@ -1,0 +1,167 @@
+.home-body {
+  background-color: #1a1a1a;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Judul Coba dibesarin 30% lebih besar saat ini */
+.hero-title {
+  text-align: center;
+  padding: 60px 20px 40px 20px;
+}
+
+.hero-title h1 {
+  font-family: "Cinzel", serif;
+  font-size: 3.5em;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+  color: #e0c097;
+}
+
+.hero-title p {
+  color: #aaa;
+  font-size: 1.1em;
+}
+
+.main-layout {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  gap: 40px;
+  position: relative;
+}
+.main-layout h2 {
+  display: flex;
+  border: white 2px solid;
+  font-size: 20px;
+}
+#dev {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 13px;
+}
+/* Grid Kartu (70% Lebar Layar) */
+.card-grid {
+  flex: 2; /* Mengambil porsi lebih besar */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 Kolom */
+  gap: 20px;
+}
+#dev {
+  display: flex;
+  display: inline;
+}
+/* Desain Kartu */
+.card {
+  background: #2a2a2a;
+  border: 1px solid #444;
+  border-radius: 8px;
+  height: 150px; /* Tinggi kartu, fix */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.card h3 {
+  z-index: 2;
+  font-size: 1.2em;
+  letter-spacing: 1px;
+}
+
+/* Efek Hover Kartu */
+.card:hover {
+  background: #e0c097;
+  color: #000;
+  transform: scale(1.05);
+  border-color: #fff;
+  box-shadow: 0 0 15px rgba(224, 192, 151, 0.5);
+}
+
+/* Panel Preview (30% Lebar Layar) */
+.preview-panel {
+  flex: 1; /* Porsi lebih kecil */
+  position: sticky;
+  top: 20px;
+  height: 400px; /* Tinggi area preview */
+  background: #222;
+  border: 1px solid #e0c097;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.preview-content {
+  text-align: center;
+}
+
+.preview-content h2 {
+  margin-bottom: 15px;
+  color: #e0c097;
+  font-family: "Cinzel", serif;
+}
+
+.img-box {
+  width: 100%;
+  height: 200px;
+  background: #000;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  overflow: hidden;
+  border: 1px solid #444;
+}
+
+.img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.3s ease;
+}
+
+#preview-desc {
+  font-size: 0.9em;
+  color: #ccc;
+  line-height: 1.5;
+}
+.sidebar {
+  width: 250px;
+  flex-shrink: 0;
+  margin-right: 30px;
+  border-right: 1px solid #ccc;
+  padding-right: 20px;
+}
+
+.sidebar h3 {
+  font-size: 0.9em;
+  color: #54595d;
+  border-bottom: 1px solid #c8ccd1;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+
+.sidebar ul {
+  list-style: none;
+  font-size: 0.9em;
+}
+
+.sidebar li {
+  margin-bottom: 5px;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #0645ad;
+}
+.sidebar a:hover {
+  text-decoration: underline;
+}
